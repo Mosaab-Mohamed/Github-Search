@@ -1,0 +1,12 @@
+.charts {
+  width: 100%;
+  .charts__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .chart-wrapper {
+      margin-bottom: 30px;
+      box-shadow: 2px 2px 5px rgb(214, 214, 214);
+    }
+  }
+}
