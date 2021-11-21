@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
@@ -9,7 +9,7 @@ import AuthWrapper from "./components/AuthWrapper";
 const App = () => {
   return (
     <AuthWrapper>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route
             path="/"
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </AuthWrapper>
   );
 };
